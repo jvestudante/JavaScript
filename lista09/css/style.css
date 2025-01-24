@@ -1,0 +1,105 @@
+/* Resetando margens e padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Títulos principais */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+/* Container das divs */
+div {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Campos de entrada de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Foco no campo de texto */
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Botões */
+input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Espaçamento entre os campos */
+div + div {
+    margin-top: 20px;
+}
+
+/* Ajustando o layout para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="button"] {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
