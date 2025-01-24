@@ -1,11 +1,9 @@
-/* Resetando margens e padding de todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo da página */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -14,7 +12,6 @@ body {
     color: #333;
 }
 
-/* Títulos principais */
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -29,7 +26,6 @@ h2 {
     color: #555;
 }
 
-/* Container das divs */
 div {
     margin-bottom: 20px;
     padding: 15px;
@@ -38,7 +34,6 @@ div {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Labels */
 label {
     font-size: 1rem;
     margin-bottom: 5px;
@@ -47,7 +42,6 @@ label {
     color: #555;
 }
 
-/* Campos de entrada de texto */
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -58,13 +52,11 @@ input[type="text"] {
     outline: none;
 }
 
-/* Foco no campo de texto */
 input[type="text"]:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
-/* Botões */
 input[type="button"] {
     background-color: #007bff;
     color: #fff;
@@ -80,12 +72,10 @@ input[type="button"]:hover {
     background-color: #0056b3;
 }
 
-/* Espaçamento entre os campos */
 div + div {
     margin-top: 20px;
 }
 
-/* Ajustando o layout para telas pequenas */
 @media (max-width: 600px) {
     body {
         padding: 10px;
