@@ -8,7 +8,13 @@
     font-style: normal;
     user-select: none;
 }
-
+.sorteado:hover{
+    cursor: pointer;
+}
+.botao:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 header{
     position: fixed;
     top: 0;
