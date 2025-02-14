@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    user-select: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+}
+.menu{
+    margin: auto;
+    padding: 20px 20px;
+    color: yellow;
+    width: 100%;
+    text-align: center;
+}
+select{
+    background-color: #FFFFA8;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+input{
+    background-color: #623579;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 200px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

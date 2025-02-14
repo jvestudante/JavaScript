@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JOGO É PAR</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <label for="selecao">Nível: </label>
+                <select name="Nível" id="selecao">
+                    <option value="1">Selecione</option>
+                    <option value="2">Fácil</option>
+                    <option value="3">Médio</option>
+                    <option value="4">Difícil</option>
+                </select>
+            </div>
+            <div class="menu">
+                <p>Tempo: <span id="cronosInfo"></span></p>
+            </div>
+            <div class="menu">
+                <input type="button" value="Iniciar" id="btnPlay">
+                <input type="button" value="Pausar" id="btnPause">
+                <input type="button" value="Parar" id="btnStop">
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <p class="teste"><span id="numeroSorteio">_</span></p>
+    </main>
+    <footer>
+        <nav>
+            <div class="menu">
+                <p>ACERTOS: <span id="acertoInfo"></span> (<span id="percentualInfo"></span>)</p>
+            </div>
+            <div class="menu">
+                <p>ERROS: <span id="erroInfo"></span></p>
+            </div>
+            <div class="menu">
+                <p>Números pares sorteados: <span id="paresInfo"></span></p>
+            </div>
+        </nav>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
