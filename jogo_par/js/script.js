@@ -52,7 +52,11 @@ window.addEventListener("DOMContentLoaded", function() {
             if (pares > 0) { 
                 percentualInfo.textContent = ((acertos / pares) * 100).toFixed(2) + "%";
             }
-        } else {
+            
+        }else if (selecao.value == 1) {
+            numeroSorteio.style.color = "black"
+        }
+        else{
             erroInfo.textContent = (parseInt(erroInfo.textContent) || 0) + 1;
             numeroSorteio.style.color = "red"; 
         }
@@ -78,6 +82,7 @@ window.addEventListener("DOMContentLoaded", function() {
         acertoInfo.textContent = 0;
         percentualInfo.textContent = 0;
         paresInfo.textContent = 0;
+        selecao.value = 1;
     });
 
     function relogio(dificuldade) {
