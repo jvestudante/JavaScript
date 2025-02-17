@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
             if (loginValido) {
                 alert("Bem Vindo de volta");
-                window.location.href = "/jogo.html";
+                window.location.href = "/JavaScript/jogo_final/jogo.html";
             } else {
                 alert("Senha inválida ou Usuário não cadastrado");
             }
