@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function() {
     const btnPlay = document.getElementById("btnPlay");
     const btnPause = document.getElementById("btnPause");
     const btnStop = document.getElementById("btnStop");
+    const btnSair = document.getElementById("btnSair");
     const cronosInfo = document.getElementById("cronosInfo");
     const selecao = document.getElementById("selecao");
     const acertoInfo = document.getElementById("acertoInfo");
@@ -83,6 +84,10 @@ window.addEventListener("DOMContentLoaded", function() {
         percentualInfo.textContent = 0;
         paresInfo.textContent = 0;
         selecao.value = 1;
+    });
+
+    btnSair.addEventListener("click", function(){
+        window.loction.href = "/JavaScript/jogo_final/login.html";
     });
 
     function relogio(dificuldade) {
