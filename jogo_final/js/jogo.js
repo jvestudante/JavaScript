@@ -87,7 +87,7 @@ window.addEventListener("DOMContentLoaded", function() {
     });
 
     btnSair.addEventListener("click", function(){
-        window.loction.href = "/JavaScript/jogo_final/login.html";
+        window.location.href = "/JavaScript/jogo_final/login.html";
     });
 
     function relogio(dificuldade) {
