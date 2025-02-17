@@ -11,15 +11,14 @@ window.addEventListener("DOMContentLoaded", function() {
         if (usuario.value.length === 0 || senha.value.length === 0) {
             alert("Informe o Usuário ou Senha");
         } else {
+            if (usuarios !== null){
+                alert("Senha inválida ou Usuário não cadastrado");
+            }
             let loginValido = false;
             for (let i = 0; i < usuarios.length; i++) {
-                if (usuarios !== null){
-                    if (usuarios[i].username === usuario.value && usuarios[i].password === senha.value) {
-                        loginValido = true;
-                        break;
-                    }
-                }else{
-                    alert("Senha inválida ou Usuário não cadastrado");
+                if (usuarios[i].username === usuario.value && usuarios[i].password === senha.value) {
+                    loginValido = true;
+                    break;
                 }
             }
 
