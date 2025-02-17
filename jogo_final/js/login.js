@@ -8,11 +8,13 @@ window.addEventListener("DOMContentLoaded", function() {
     usuarios = JSON.parse(usuarios);
 
     btnLogin.addEventListener("click", function() {
+        
         if (usuario.value.length === 0 || senha.value.length === 0) {
             alert("Informe o Usuário ou Senha");
         } else {
-            if (usuarios !== null){
+            if (usuarios === null){
                 alert("Senha inválida ou Usuário não cadastrado");
+                return;
             }
             let loginValido = false;
             for (let i = 0; i < usuarios.length; i++) {
