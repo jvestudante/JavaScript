@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 users.push(newUser);
                 localStorage.setItem("users", JSON.stringify(users));
                 alert("Usuário cadastrado com sucesso.");
-                window.location.href = "/login.html";
+                window.location.href = "/JavaScript/jogo_final/login.html";
             }
         }
     });
