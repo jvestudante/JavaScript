@@ -13,9 +13,13 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             let loginValido = false;
             for (let i = 0; i < usuarios.length; i++) {
-                if (usuarios[i].username === usuario.value && usuarios[i].password === senha.value) {
-                    loginValido = true;
-                    break;
+                if (usuarios !== null){
+                    if (usuarios[i].username === usuario.value && usuarios[i].password === senha.value) {
+                        loginValido = true;
+                        break;
+                    }
+                }else{
+                    alert("Senha inválida ou Usuário não cadastrado");
                 }
             }
 
